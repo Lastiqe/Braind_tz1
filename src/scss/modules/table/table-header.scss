@@ -1,0 +1,22 @@
+.table-header {
+    display: grid;
+    height: 39px;
+    grid-template-columns: 77px 180px 395px 129px 149px;
+    border: 1px solid #F2F2F2;
+    color: #979797;
+    ;
+
+    &__item {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 14px;
+        line-height: 18px;
+
+
+        &:nth-child(1) {
+            justify-content: center;
+        }
+    }
+
+}

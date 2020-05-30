@@ -1,0 +1,126 @@
+.review {
+    &__wrap {
+        grid-area: review;
+        padding-bottom: 16px;
+
+        &--modified {
+            display: grid;
+            grid-area: modified;
+            grid-template-columns: 395px 129px 149px;
+            grid-template-rows: 1fr;
+            grid-template-areas:
+                "review-mod status-mod .";
+            border-top: 1px solid #F2F2F2;
+            padding: 16px 0;
+        }
+    }
+
+    &__title {
+        font-size: 12px;
+        color: #FF6D00;
+
+        &--notposted {
+            color: #A0A0A0;
+            font-size: 12px;
+        }
+
+        &--mobile-width {
+            display: none;
+        }
+    }
+
+    &__body {
+        font-size: 12px;
+        line-height: 20px;
+        padding-right: 25px;
+
+        &--modified {
+            grid-area: review-mod;
+        }
+
+        &--notposted {
+
+            :nth-child(2),
+            :nth-child(3),
+            :nth-child(4) {
+                display: none;
+            }
+        }
+    }
+
+    &__text {
+        :nth-child(2) {
+            display: none;
+        }
+
+        &--full {
+            :nth-child(1) {
+                display: none;
+            }
+
+            :nth-child(2) {
+                display: block;
+            }
+        }
+    }
+
+    &__score {
+        font-size: 12px;
+        line-height: 20px;
+        color: #afafaf;
+        font-weight: bold;
+    }
+
+    &__impression,
+    &__conformity,
+    &__reliability {
+        font-size: 12px;
+        line-height: 20px;
+        color: #afafaf;
+        font-weight: normal;
+        margin-right: 16px;
+    }
+
+    &__collapse-button {
+        display: flex;
+        width: 80px;
+        justify-content: space-between;
+        align-items: center;
+        color: #FF6D00;
+        cursor: pointer;
+
+
+    }
+
+    &__imgs {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    &__img-wrap {
+        display: flex;
+        width: 70px;
+        height: 70px;
+        align-items: center;
+        border: 1px solid #EBEBEA;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+}
+
+.arrow {
+    margin-bottom: -2 px;
+    transition: transform linear .15s;
+
+    &--active {
+        transform: rotate(180deg);
+        transition: transform linear .15s;
+    }
+
+}

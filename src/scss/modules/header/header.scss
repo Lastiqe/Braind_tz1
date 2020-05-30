@@ -1,0 +1,33 @@
+.header {
+    margin-bottom: 22px;
+
+    &__top {
+        height: 130px;
+    }
+
+    &__title {
+        font-size: 20px;
+        line-height: 27px;
+        font-weight: bold;
+    }
+}
+
+.warn-window {
+    display: flex;
+    height: 85px;
+    width: 100%;
+    background-color: #F7F7F7;
+    align-items: center;
+    margin-bottom: 22px;
+
+    &__text {
+        margin: 0;
+        margin-left: 10px;
+    }
+
+    &__img {
+        height: 15px;
+        width: 15px;
+        margin-left: 50px;
+    }
+}

@@ -1,0 +1,15 @@
+.product-photo {
+    grid-area: photo;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+
+
+}
+
+.product-name {
+    grid-area: name;
+    max-width: 153px;
+    font-size: 12px;
+    line-height: 16px;
+}

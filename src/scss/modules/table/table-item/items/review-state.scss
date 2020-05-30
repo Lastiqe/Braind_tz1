@@ -1,0 +1,40 @@
+.review-state {
+    grid-area: status;
+    font-size: 12px;
+    line-height: 16px;
+    color: #AFAFAF;
+
+    &--modified {
+        grid-area: status-mod;
+    }
+
+    &__status {
+        display: flex;
+        border-radius: 2px;
+        font-size: 10px;
+        line-height: 14px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 6px;
+
+        &--posted {
+            background: #50AD01;
+            height: 22px;
+            width: 93px;
+        }
+
+        &--moderating {
+            background: rgba(81, 173, 1, 0.459);
+            height: 22px;
+            width: 97px;
+        }
+
+        &--notposted {
+            background: #A0A0A0;
+            height: 22px;
+            width: 109px;
+        }
+    }
+}

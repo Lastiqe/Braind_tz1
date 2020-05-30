@@ -1,0 +1,25 @@
+@import "./items/product.scss";
+@import "./items/review.scss";
+@import "./items/review-state.scss";
+@import "./items/review-action.scss";
+
+.table-item {
+    box-sizing: border-box;
+    border-bottom: 1px solid #F2F2F2;
+    padding: 16px 0;
+
+    &__wrap {
+        display: grid;
+        grid-template-columns: 77px 180px 395px 129px 149px;
+        grid-template-areas: "photo name review status actions";
+
+        &--modified {
+            grid-template-rows: auto auto;
+            grid-template-areas:
+                "photo name review status actions"
+                ". . modified modified modified";
+
+        }
+    }
+
+}

@@ -1,0 +1,8 @@
+@import "./table-header.scss";
+@import "./table-body.scss";
+
+.reviews-table {
+    display: grid;
+    grid-template-rows: 40px 1fr;
+    margin-bottom: 10px;
+}
